@@ -1,0 +1,5 @@
+a django app that chooses a kanji of the day
+
+kanjitoday.com
+
+uses kanjidic2 and edict
