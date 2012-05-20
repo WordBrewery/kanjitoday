@@ -1,0 +1,22 @@
+{{ object.literal }} <br />
+
+onyomi:
+<ul>
+    {% for on in object.onyomi.all %}
+        <li>{{ on.literal }} </li>
+    {% endfor %}
+</ul>
+
+kunyomi:
+<ul>
+    {% for kun in object.kunyomi.all %}
+        <li>{{ kun.literal }} </li>
+    {% endfor %}
+</ul>
+
+Meanings:
+<ul>
+    {% for meaning in object.meanings.all %}
+        <li>{{ meaning.text}} </li>
+    {% endfor %}
+</ul>

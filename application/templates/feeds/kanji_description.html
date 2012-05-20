@@ -1,0 +1,27 @@
+onyomi:
+<ul>
+{% for onyomi in obj.onyomi.all %}
+    <li> {{ onyomi.literal }} </li>
+{% empty %}
+    <li>N/A</li>
+{% endfor %}
+</ul>
+
+kunyomi:
+<ul>
+{% for kunyomi in obj.kunyomi.all %}
+    <li> {{ kunyomi.literal }} </li>
+{% empty %}
+    <li>N/A</li>
+{% endfor %}
+</ul>
+
+meanings:
+<ul>
+{% for meaning in obj.meanings.all %}
+    <li> {{ meaning.text }} </li>
+{% empty %}
+    <li>N/A</li>
+{% endfor %}
+</ul>
+

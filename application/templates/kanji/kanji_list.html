@@ -1,0 +1,6 @@
+<ul>
+{% for k in object_list %}
+    <li><a href="/kanji/{{ k.id }}/">{{ k.literal }}</a><li>
+{% endfor %}
+</ul>
+
